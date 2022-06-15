@@ -17,3 +17,11 @@ jobs:
           print
           (platform.processor())
         shell: python
+  run-windows-commands:
+    runs-on: windows-latest
+    steps:
+      - name: Direcotry Powershell
+        run: Get-Location
+      - name: Direcotry Bash
+        run: pwd
+        shell: bash
